@@ -1,21 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Car from './Car.js';
+
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+/* Depreciated 
+ReactDOM.render(<p>Hello</p>, document.getElementById('root'));
+*/
+const x = 5;
+let text = "Goodbye";
+if (x < 10){
+    text = "Hello Hans";
+}
 
-const myFirstElement = <h1>Hello React!</h1>
+// function Car() {
+//     return <h2>I am a Car!</h2>;
+// }
+  
+// function Garage() {
+//     return (
+//       <>
+//         <h1>Who lives in my Garage?</h1>
+//         <Car />
+//       </>
+//     );
+// }
+
+//TODO React Class next on W3Schools
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myFirstElement);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+const myelement = <h1>{text}</h1>;
+root.render(myelement);
+root.render(<Car />);
