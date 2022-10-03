@@ -28,7 +28,7 @@ if (x < 10){
 //     );
 // }
 
-//TODO React Class next on W3Schools
+//TODO React Props
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const myelement = <h1>{text}</h1>;
 root.render(myelement);
