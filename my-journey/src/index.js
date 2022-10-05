@@ -35,20 +35,14 @@ export default function App() {
   );
 }
 
-/*
-function Car() {
-    return <h2>I am a Car!</h2>;
+const Header = () => {
+  return (
+    <>
+    <h1 style={{color:"red"}} >Hello Style!</h1>
+    <p>Add a little style!.</p>
+    </>
+  );
 }
-  
-function Garage() {
-    return (
-      <>
-        <h1>Who lives in my Garage?</h1>
-        <Car />
-      </>
-    );
-}
-*/
 
 
 //TODO React Memo
@@ -58,6 +52,6 @@ const myelement = <h1>{text}</h1>;
 root.render(<Car />);
 root.render(<Header favcol="blue"/>);
 root.render(<Container />); */
-root.render(<App />);
+root.render(<Header />);
 
 

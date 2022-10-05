@@ -1,4 +1,5 @@
 import React from "react";
+import { memo } from "react";
 import { ReactDOM } from "react";
 
 class Container extends React.Component {
@@ -34,4 +35,4 @@ class Child extends React.Component {
     }
 }
 
-export default Container;
+export default memo(Container);
